@@ -6,6 +6,7 @@ link-checker-results.txt
 **/*npm-debug.log.*
 *.js
 *.js.map
+*.iml
 e2e/**/*.js
 e2e/**/*.js.map
 _test-output
