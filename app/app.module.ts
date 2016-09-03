@@ -16,14 +16,14 @@ import { routing } from './app.routing';
 import { HeroService } from './hero.service';
 
 @NgModule({
-  imports: [ 
+  imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService), 
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
     routing
   ],
-  declarations: [ 
+  declarations: [
     AppComponent,
     HeroesComponent,
     DashboardComponent,
@@ -32,6 +32,6 @@ import { HeroService } from './hero.service';
   providers: [
     HeroService
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -11,15 +11,15 @@ import { HeroService } from './hero.service';
 export class HeroDetailComponent implements OnInit {
     constructor(
         private heroService: HeroService,
-        private route: ActivatedRoute) {}
+        private route: ActivatedRoute) { }
 
     ngOnInit(): void {
         this.route.params.forEach((params: Params) => {
             let id = +params['id']
             this.heroService.getHero(id).then(hero => {
-                    this.hero = hero;
-                    console.log("Ho")
-                });
+                this.hero = hero;
+                console.log("Ho")
+            });
         })
     }
 
